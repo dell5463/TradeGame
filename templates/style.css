@@ -1,0 +1,258 @@
+body {
+    background-color: rgb(50, 50, 53) !important;
+
+
+
+}
+
+#stats{
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+#resources {
+
+    display: flex;
+    position: absolute;
+    color: white;
+    padding: 15px;
+    margin-top: -62px; /* HALF OF THE HEIGHT */
+    margin-left: 190px; /* HALF OF THE WIDTH */
+}
+
+#energy {
+
+    display: flex;
+    position: absolute;
+    color: white;
+    padding: 15px;
+    margin-top: -62px; /* HALF OF THE HEIGHT */
+    margin-left: 190px; /* HALF OF THE WIDTH */
+}
+
+
+#prompt {
+
+
+    position: absolute;
+    color: white;
+    padding: 15px;
+    left: 42.5%;
+    top: 17%; /* HALF OF THE HEIGHT */
+    margin-left: -80px; /* HALF OF THE WIDTH */
+}
+
+
+
+#prompt1 {
+
+
+    color: white;
+    padding: 15px;
+    margin-top: -71px;
+    margin-left: 150px;
+}
+
+#money {
+
+    display: flex;
+    position: absolute;
+    color: white;
+    padding: 15px;
+    margin-top: -62px; /* HALF OF THE HEIGHT */
+    margin-left: 190px; /* HALF OF THE WIDTH */
+}
+.moneygain {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    color: white;
+    padding: 15px;
+    margin-top: -62px; /* HALF OF THE HEIGHT */
+    margin-left: 250px; /* HALF OF THE WIDTH */
+
+}
+
+.moneygain.ganim {
+    animation-name: addmoney;
+    animation-duration: 1s;
+}
+
+
+@keyframes addmoney {
+    0%   {visibility:visible;  color: rgb(59, 150, 63); margin-left:250px; margin-top:-50px;}
+
+    100% {visibility:visible; color:rgba(59, 150, 63, 0); margin-left:250px; margin-top:0px;}
+}
+
+/*subtract money animation*/
+
+.moneygain.manim {
+    animation-name: submoney;
+    animation-duration: 1s;
+}
+
+
+@keyframes submoney {
+    0%   {visibility:visible;  color: rgb(180, 30, 30); margin-left:250px; margin-top:-50px;}
+
+    100% {visibility:visible; color:rgba(59, 150, 63, 0); margin-left:250px; margin-top:0px;}
+}
+
+
+#commandbox {
+    top: 50%; /* IMPORTANT */
+    left: 50%; /* IMPORTANT */
+    position: absolute;
+
+
+    margin-top: -300px; /* HALF OF THE HEIGHT */
+    margin-left: -250px; /* HALF OF THE WIDTH */
+}
+
+
+#submit {
+    top: 50%; /* IMPORTANT */
+    left: 50%; /* IMPORTANT */
+    position: absolute;
+
+
+    margin-top: 50px; /* HALF OF THE HEIGHT */
+    margin-left: -30px; /* HALF OF THE WIDTH */
+}
+#wrap{
+    min-width: 600px;
+    }
+
+#command 
+{
+    width: 500px;
+    height: 50px;
+}
+
+
+/*Trying to fix the elements' size according to screen sizes*/
+
+
+/*small screens*/
+@media (max-width: 767px) {
+    #commandbox {
+        top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        position: absolute;
+    
+    
+        margin-top: 10px; /* HALF OF THE HEIGHT */
+        margin-left: -250px; /* HALF OF THE WIDTH */
+    }
+
+    #prompt {
+
+
+        position: absolute;
+        color: white;
+        padding: 15px;
+        left: 42.5%;
+        top: 17%; /* HALF OF THE HEIGHT */
+        margin-left: -80px; /* HALF OF THE WIDTH */
+        margin-top: 150px;
+    }
+    
+    
+    
+    #prompt1 {
+    
+    
+        color: white;
+        padding: 15px;
+        margin-top: -71px;
+        margin-left: 150px;
+        margin-top: 150px;
+
+    }
+
+}
+
+
+    /*medium screens*/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules specific to medium screens */
+
+    #commandbox {
+        top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        position: absolute;
+    
+    
+        margin-top: 50px; /* HALF OF THE HEIGHT */
+        margin-left: -250px; /* HALF OF THE WIDTH */
+    }
+
+    #prompt {
+
+
+        position: absolute;
+        color: white;
+        padding: 15px;
+        left: 42.5%;
+        top: 17%; /* HALF OF THE HEIGHT */
+        margin-left: -80px; /* HALF OF THE WIDTH */
+        margin-top: 200px;
+    }
+    
+    
+    
+    #prompt1 {
+    
+    
+        color: white;
+        padding: 15px;
+        margin-top: -71px;
+        margin-left: 150px;
+        margin-top: 200px;
+
+    }
+  }
+
+  /*large screens*/
+  @media (min-width: 1024px) {
+    /* CSS rules specific to large screens */
+    #commandbox {
+        top: 50%; /* IMPORTANT */
+        left: 50%; /* IMPORTANT */
+        position: absolute;
+    
+    
+        margin-top: 50px; /* HALF OF THE HEIGHT */
+        margin-left: -250px; /* HALF OF THE WIDTH */
+    }
+
+    #prompt {
+
+
+        position: absolute;
+        color: white;
+        padding: 15px;
+        left: 42.5%;
+        top: 17%; /* HALF OF THE HEIGHT */
+        margin-left: -80px; /* HALF OF THE WIDTH */
+        margin-top: 200px;
+    }
+    
+    
+    
+    #prompt1 {
+    
+    
+        color: white;
+        padding: 15px;
+        margin-top: -71px;
+        margin-left: 150px;
+        margin-top: 200px;
+
+    }
+  }
+
