@@ -10,6 +10,7 @@ var energy = 5;
 var expenseMin = 1
 var expenseMax = 100
 var bkMine;
+
 function comsubmit()
     {
 
@@ -108,6 +109,19 @@ function comsubmit()
 
         }
     }
+
+function getImageSource() {
+    var someimage = document.getElementById('product_top');
+    var myimg = someimage.getElementsByTagName('pickaxe_img')[0];
+    $(document).ready(function() {
+        $('#img').attr('src', myimg);
+      });
+    console.log("Image source: " + myimg);
+    window.location.href = "tool.html";
+}
+
+
+
 
 
 function randomIntFromInterval(min, max) { // min and max included 
