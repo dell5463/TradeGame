@@ -37,6 +37,9 @@ function comsubmit()
                 document.getElementById("mgain").classList.add('ganim');
                 resources -= parseInt(command)
                 document.getElementById("resources").innerHTML = resources;
+                setTimeout(function () {
+                    document.getElementById("mgain").classList.remove('m=ganim');
+                }, 1010);
             }
             else {
                 
@@ -85,6 +88,8 @@ function comsubmit()
 
         }
         if (command === "sell") {
+            document.getElementById("prompt1").style.color = "white";
+
             document.getElementById("prompt1").innerHTML = "How much would you like to sell?";
 
             sellfunc = true
@@ -110,19 +115,21 @@ function comsubmit()
         }
     }
 
-function getImageSource() {
-    var someimage = document.getElementById('product_top');
-    var myimg = someimage.getElementsByTagName('pickaxe_img')[0];
-    $(document).ready(function() {
-        $('#img').attr('src', myimg);
-      });
-    console.log("Image source: " + myimg);
-    window.location.href = "tool.html";
+function viewProduct(productId) {
+    window.location.href = 'tool.html?id=' + productId;
+    
+    }
+
+
+
+function Unlock() {
+    //css cool effects thingy//
+    document.getElementById('selectedimg').style.transition = "0.5s";
+    document.getElementById('selectedimg').style.filter = "blur(0px)";
+    document.getElementById("grow").classList.add('unlock');
+    document.getElementById("buybtn").innerHTML = "Unlocked"
+
 }
-
-
-
-
 
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
