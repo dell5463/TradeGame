@@ -5,20 +5,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productstyle.css">
     <script src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <title></title>
 </head>
 <body>
     
 
-
-    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">Trade Game</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +33,44 @@
   </div>
 </nav>
 
-<img id="img" src="" style="width: 300px; height: 300px; border-color: red; border-width: 5px; border-style: groove;">
 
+
+<div class="container">
+  <h1>Stone Tools</h1>
+  <div class="row" id="grow">
+    <div class="col-md-6">
+      <img id="selectedimg" src="" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <h3>Item Description</h3>
+      <p>Nothing special here. Just basic stone tools.</p>
+      <h3>Stats</h3>
+      <ul>
+        <li>Price: $99.99</li>
+        <li id="miningboost">Mining Multiplier:</li>
+        <!-- Add more details as needed -->
+      </ul>
+      <button id="buybtn" class="btn btn-primary btn-success" onclick="Unlock()">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  // Get the product ID from the URL query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
+
+  if (productId == "1") {
+
+    document.getElementById('selectedimg').src = "product1.png";
+    document.getElementById("miningboost").innerHTML = "Mining Multiplier: x2";
+  }
+
+
+  // Update the DOM to display the product details
+  // ... display other product details
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 </body>
 
