@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(46, 46, 46) !important;
+
+
+
+}
+
+
+.row {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(22, 22, 22) ;
+    color: rgb(116, 113, 113);
+
+
+}
+
+.row.unlock {
+
+    background-color: rgb(22, 22, 22) ;
+    color: rgb(255, 255, 255);
+
+
+
+}
+
+h1 {
+    color: rgb(216, 216, 216);
+
+
+}
+
+#selectedimg {
+
+    width: 300px;
+    height: 300px;
+
+}
+
+.img-fluid {
+    filter: blur(6px); 
+    transition: 0.5s;
+
+
+}
